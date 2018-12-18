@@ -19,7 +19,7 @@
 	$name = "John"
 ?>
 <p>2 пример</p>
-<?=$name;?>
+<?= $name;?>
 </body>
 
 </html> 
