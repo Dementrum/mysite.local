@@ -34,11 +34,13 @@ echo USER_NAME;
 <hr>
 
 <p>3a пример</p>
+
 <?
 define("ONE_HUNDRED", "100");
 define("ONE_HUNDRED_TEN",ONE_HUNDRED + 10);
 echo ONE_HUNDRED_TEN
 ?>
+
 <hr>
 
 <p>3b пример</p>
