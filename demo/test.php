@@ -22,7 +22,8 @@
 <hr>
 
 <p>2 пример</p>
-<?=$name;?>
+
+<?= $name;?>
 <hr>
 
 <p>3 пример</p>
@@ -32,8 +33,10 @@ echo USER_NAME;
 ?>
 
 <hr>
-
 <p>3a пример</p>
+
+
+<p>3 пример</p>
 
 <?
 define("ONE_HUNDRED", "100");
@@ -44,6 +47,11 @@ echo ONE_HUNDRED_TEN
 <hr>
 
 <p>3b пример</p>
+<?
+const TWO_HUNDRED = 200;
+const TWO_HUNDRED_TEN = TWO_HUNDRED + 10;
+echo ONE_HUNDRED_TEN;
+?>
 </body>
 
 </html> 

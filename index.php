@@ -1,3 +1,10 @@
+<?php
+	//Установка локали и даты
+	setlocale(LC_ALL, "russian");
+	$day = strftime('%d');
+	$mon = strftime('%B');
+	$year = strftime('%Y');
+?>
 <!DOCTYPE html>
 <html>
 
@@ -22,7 +29,8 @@
     <!-- Заголовок -->
     <blockquote>
     	<?php
-				echo strftime('Сегодня %d-%m-%Y');
+				//echo strftime('Сегодня %d-%m-%Y');
+				echo 'Сегодня', $day, $mon, $year;
 			?>
     </blockquote>
     <!-- Область основного контента -->
@@ -60,7 +68,7 @@
   </div>
   <div id="footer">
     <!-- Нижняя часть страницы -->
-    &copy; Супер Мега Веб-мастер, 2000 &ndash; <? echo strftime('%Y'); ?>
+    &copy; Супер Мега Веб-мастер, 2000 &ndash; <?= $year;?>
     <!-- Нижняя часть страницы -->
   </div>
 </body>
