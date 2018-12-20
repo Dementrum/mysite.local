@@ -31,7 +31,7 @@
 		<blockquote>
 			<?php
             //echo strftime('Сегодня %d-%m-%Y');
-            echo 'Сегодня ', $day, ' ', $mon , ' ', $year;
+            echo "Сегодня $day $mon $year";
         ?>
 		</blockquote>
 		<!-- Область основного контента -->

@@ -77,7 +77,7 @@ header("Content-Type: text/plain; charset=utf-8");
 	<?php
 			$x = 'name';
 			$$x = 'Вася';
-			echo 'Привет ,', $name;
+			echo "<pre>\nПривет ,", $name;
 	?>
 	<hr>
 	<p>Числа</p>
@@ -96,13 +96,85 @@ header("Content-Type: text/plain; charset=utf-8");
 		$float = 7E-10;
 		echo $float
 	?>
-	<?php
-		echo 'это простая строка в апострофах';
-		echo "это простая строка в двойных кавычках";
-		print "<pre>Это будет развернуто: \n\tв две строки";
-		echo '<pre>А это не будет развернуто: \nв две строки';
-  ?>
+	<hr>
+	<p>Cтроки</p>
+<?php
+	$name = "John";
+	echo 'это простая строка в апострофах';
+	echo "\nэто простая строка в двойных кавычках";
+	print "<pre>Это будет развернуто: \n\tв две строки</pre>";
+	echo '<pre>А это не будет развернуто: \nв две строки</pre>';
+echo <<<Chip
+\nHello
+	$name
+Chip;
 
+	$juice = "apple";
+	echo "\nHe drank some $juice juice\n";
+	echo "He drank some $juice made of {$juice}s\n";//Решение
+//	Доступ к символу в строке
+	$str = "This is a test";
+	$first = $str{0};
+	$third = $str{2};
+	echo $first;
+	echo $third;
+
+?>
+	<?php
+		$name = "John!";//1 вариант Получение последнего символа в строке
+		$len = strlen($name);//5
+		$pos = $len - 1;
+		echo $name{$pos};
+
+		$letter = $name{4};// 2 вариант
+		echo $letter;
+
+		$last = $name{ strlen($name) -1};// 3 вариант
+		echo $last;
+
+		$name{strlen($name)-1} = "i";// Изменение последнего символа в строке
+		echo $name;
+	?>
+	<p><b><i>Конкатенация строк</i></b></p>
+	<?php	//первый вариант
+		$a = "Hello";
+		$b = $a . " World";
+		echo $b; 
+	?>
+	<?php //второй вариант
+		$a = "Hello";
+		$b = "World";
+		$c = $a . " " . $b; 
+		echo $c
+	?>
+	<?php //третьий вариант
+		$a = "Hello";
+		$b = "World";
+		$c = "$a $b"; 
+		echo $c
+	?>
+	<hr>
+	<p>Длина строк</p>
+	<?php
+		$name = "Вася";
+		$len = mb_strlen($name);
+		echo $len;
+	?>
+	<?php
+		$x = '5';
+		echo $x * 10;
+	?>
+	<?php
+		$x = '5hhhh';
+		echo $x * 10;
+	?>
+	<hr>
+	<p>Boolen</p>
+	<?php
+	$x = true;
+	echo $x; // Выводит 1 false выводит 0
+	echo gettype($x);
+	?>
 </body>
 
 </html>
