@@ -1,3 +1,12 @@
+<?
+	ini_get('post_max_size');
+// 50M
+// 1G
+// 1234K
+// 12347686
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -37,6 +46,9 @@
       <input type='submit' value='Отправить' />
     </form>
     <!-- Область основного контента -->
+    <?php
+		
+		?>
   </div>
   <div id="nav">
     <h2>Навигация по сайту</h2>

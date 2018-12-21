@@ -4,7 +4,22 @@
 	$day = strftime('%d');
 	$mon = strftime('%B');
 	$year = strftime('%Y');
-	$mon = iconv('windows-1251', 'utf-8', $mon)
+	$mon = iconv('windows-1251', 'utf-8', $mon);
+	// Приветствие
+	$hour = (int)strftime('%H');
+	$welcome = '';
+	if($hour>0 and $hour<6):
+		$welcome = "Доброй ночи";
+	elseif($hour>=6 and $hour<12):
+		$welcome = "Доброе утро";
+	elseif($hour>=12 and $hour<18):
+		$welcome = "Добрый день";
+	elseif($hour>=18 and $hour<23):
+		$welcome = "Добрый вечер";
+	else:
+		$welcome = "Доброй ночи";
+	endif;
+	
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,7 +41,8 @@
 
 	<div id="content">
 		<!-- Заголовок -->
-		<h1>Добро пожаловать на наш сайт!</h1>
+		<h1>
+			<?= $welcome ?>, Гость!</h1>
 		<!-- Заголовок -->
 		<blockquote>
 			<?php

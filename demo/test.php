@@ -98,7 +98,7 @@ header("Content-Type: text/plain; charset=utf-8");
 	?>
 	<hr>
 	<p>Cтроки</p>
-<?php
+	<?php
 	$name = "John";
 	echo 'это простая строка в апострофах';
 	echo "\nэто простая строка в двойных кавычках";
@@ -175,6 +175,21 @@ Chip;
 	echo $x; // Выводит 1 false выводит 0
 	echo gettype($x);
 	?>
+
+	<h1>HEADER</h1>
+	<?
+		$shop = 'close';
+		if($shop == "open"){
+//			echo "Иду в магазин";
+			
+	?>
+	<h1>HEADER</h1>
+	<?
+		echo "Покупаю хлеб\n";
+		echo "Иду домой";
+		}
+	?>
+	<h1>HEADER</h1>
 </body>
 
 </html>
