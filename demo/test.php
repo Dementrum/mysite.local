@@ -77,7 +77,7 @@ header("Content-Type: text/plain; charset=utf-8");
 	<?php
 			$x = 'name';
 			$$x = 'Вася';
-			echo "<pre>\nПривет ,", $name;
+			echo "<pre>\nПривет ,</pre>", $name;
 	?>
 	<hr>
 	<p>Числа</p>
@@ -101,17 +101,17 @@ header("Content-Type: text/plain; charset=utf-8");
 <?php
 	$name = "John";
 	echo 'это простая строка в апострофах';
-	echo "\nэто простая строка в двойных кавычках";
-	print "<pre>Это будет развернуто: \n\tв две строки</pre>";
-	echo '<pre>А это не будет развернуто: \nв две строки</pre>';
+	echo " это простая строка в двойных кавычках";
+	print "<pre>Это будет развернуто: \n\tв две строки\n";
+	echo 'А это не будет развернуто: \nв две строки</pre>';
 echo <<<Chip
 \nHello
 	$name
 Chip;
 
 	$juice = "apple";
-	echo "\nHe drank some $juice juice\n";
-	echo "He drank some $juice made of {$juice}s\n";//Решение
+	echo "<pre>\nHe drank some $juice juice\n</pre>";
+	echo "<pre>He drank some $juice made of {$juice}s</pre>";//Решение
 //	Доступ к символу в строке
 	$str = "This is a test";
 	$first = $str{0};
@@ -174,6 +174,84 @@ Chip;
 	$x = true;
 	echo $x; // Выводит 1 false выводит 0
 	echo gettype($x);
+	?>
+	<hr>
+	<p>Приведение типов</p>
+	<?php
+	$x = "10 hello";
+	echo (int)$x;
+	echo $x;
+	?>
+	<hr>
+	<p>Условия if и else</p>
+	<?
+	$shop = true;
+	if($shop){
+		echo "<pre>Покупаю хлеб\n";
+		echo "Иду домой</pre>";
+	}	
+	?>
+	<p>Конструкцию лучше писать начинать так:</p>
+	<p><b>if(){}</b></p>
+	<?php
+		$shoping = "0";//1 или true
+		$shoping = null;//false
+		echo isset($shoping);
+	?>
+	<?
+	$shop = "open";
+	if($shop == "open"){
+		echo "<pre>Иду в магазин\n";
+		echo "Покупаю хлеб\n";
+	}	
+	echo "Иду домой</pre>";
+	?>
+	<?
+	$shop = "open";
+	if($shop != "close"){//не равно
+		echo "<pre>Иду в магазин\n";
+		echo "Покупаю хлеб\n";
+	}	
+	echo "Иду домой</pre>";
+	?>
+	<?
+	$shop = "true";
+	$money = "true";
+	if($shop && $money){//или
+		echo "<pre>Иду в магазин\n";
+		echo "Покупаю хлеб\n";
+	}	
+	echo "Иду домой</pre>";
+	?>
+	<?
+	$shop = "close";
+//Одна инструкция
+	if($shop == 'open')
+		echo "<pre>Иду в магазин\n</pre>";
+	else
+		echo "<pre>Иду в киоск\n";
+	echo "Иду домой</pre>";
+	?>
+	<?
+	$shop = true;
+	$money = false;
+//Группа инструкций
+	if($shop and $money) {
+		echo "<pre>Иду в магазин\n";
+		echo "Покупаю хлеб</pre>";
+	}else{
+		echo "<pre>Иду домой\n";
+		echo "Туплю в телевизор</pre>";
+	}
+	?>
+	<p>Тернарный оператор</p>
+	<?
+	$shop = false;
+	if($shop)
+		echo "<pre>Иду в магазин\n";
+	else
+		echo "Иду в киоск</pre>";
+	$x = ($shop) ? "Иду в магазин"  : "Иду в киоск";
 	?>
 </body>
 
