@@ -4,7 +4,23 @@
 	$day = strftime('%d');
 	$mon = strftime('%B');
 	$year = strftime('%Y');
-	$mon = iconv('windows-1251', 'utf-8', $mon)
+	$mon = iconv('windows-1251', 'utf-8', $mon);
+	// Приветствие
+	$hour = (int)strftime('%H');//Получаем текущий час в виде строки от 00 до 23
+															//и приводим к целому числу от 0 до 23
+	$welcome = '';//Инициализируем переменную для приветствия
+	if($hour>0 and $hour<6):
+		$welcome = "Доброй ночи";
+	elseif($hour>=6 and $hour<12):
+		$welcome = "Доброе утро";
+	elseif($hour>=12 and $hour<18):
+		$welcome = "Добрый день";
+	elseif($hour>=18 and $hour<23):
+		$welcome = "Добрый вечер";
+	else:
+		$welcome = "Доброй ночи";
+	endif;
+	
 ?>
 
 <!DOCTYPE html>
@@ -27,17 +43,7 @@
 
 	<div id="content">
 		<!-- Заголовок -->
-		<h1> Добро
-		<!--
-		Получаем текущий час в виде строки от 00 до 23
-		и приводим к целому числу от 0 до 23
-		-->
-			<?php
-			$hour = (int) strftime('%H');
-			$welcome = '';//Инициализируем переменную для приветствия 
-			echo $hour
-			?>
-		</h1>
+		<h1><?= $welcome ?>, Гость!</h1>
 		<!-- Заголовок -->
 		<blockquote>
 			<?php
@@ -64,8 +70,18 @@
 		<!-- Навигация -->
 		<h2>Навигация по сайту</h2>
 		<!-- Меню -->
+		<?php
+		$leftMenu = [
+			['link' =>"Домой", 'href' =>"index.php"]
+			['link' =>"О нас", 'href' =>"about.php"]
+			['link' =>"Контакты", 'href' =>"contact.php"]
+			['link' =>"Таблица умножения", 'href' =>"table.php"]
+			['link' =>"Калькулятор", 'href' =>"calc.php"]
+		];
+		
+		?>
 		<ul>
-			<li><a href='index.php'>Домой</a>
+			<li><a href='<? =$leftMenu[0]['href']?><?=$leftMenu[0]['дштл']?>'>Домой</a>
 			</li>
 			<li><a href='about.php'>О нас</a>
 			</li>

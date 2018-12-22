@@ -1,3 +1,12 @@
+<?
+	ini_get('post_max_size');
+// 50M
+// 1G
+// 1234K
+// 12347686
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -36,7 +45,19 @@
       <br />
       <input type='submit' value='Отправить' />
     </form>
+		
     <!-- Область основного контента -->
+    <?php
+			$size = ini_get('post_max_size');//100M
+			$letter = $size{strlen($size) - 1};// M
+			$size = (int)$size; //8
+			switch(strtoupper($letter)) {
+				case "G" : $size *= 1024;
+				case "M" : $size *= 1024;
+				case "K" : $size *= 1024;
+		}
+		?> 
+		<p>Максимальный размер отправляемых данных <?= $size ?> байт.</p>
   </div>
   <div id="nav">
     <h2>Навигация по сайту</h2>

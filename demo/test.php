@@ -98,7 +98,7 @@ header("Content-Type: text/plain; charset=utf-8");
 	?>
 	<hr>
 	<p>Cтроки</p>
-<?php
+	<?php
 	$name = "John";
 	echo 'это простая строка в апострофах';
 	echo " это простая строка в двойных кавычках";
@@ -252,6 +252,70 @@ Chip;
 	else
 		echo "Иду в киоск</pre>";
 	$x = ($shop) ? "Иду в магазин"  : "Иду в киоск";
+	?>
+
+	<h1>HEADER</h1>
+	<?
+		$shop = 'close';
+		if($shop == "open"){
+			//			echo "Иду в магазин";
+			
+	?>
+	<h1>HEADER</h1>
+	<?
+		echo "Покупаю хлеб\n";
+		echo "Иду домой";
+		}
+	?>
+	<h1>HEADER</h1>
+	<hr>
+	<p>Switch</p>
+	<?php
+		$i = 2;
+		switch($i) {
+			case 0:
+				echo "Результат: 0"; break;
+			case 1:
+				echo "Результат: 1"; break;
+			case 2:
+				echo "Результат: 2"; break;
+			case 3:
+				echo "Результат: 3"; break;
+			case 4:
+				echo "Результат: 4"; break;
+			default: 
+				echo "Много";
+		}
+	?>
+	<hr>
+	<p>Массивы</p>
+	<?
+	$arr = []; //$arr = array();
+	$user = [
+			"name" =>'John', 
+			"login" =>"root", 
+			"pass" =>"1234"
+	];
+//	echo count($arr);
+	$arr["age"] = 25;
+	$arr[] = true;
+//	echo $user["name"];
+//	echo $user["login"];
+	echo is_array($arr);
+//	print_r($arr);
+//	var_dump($arr);
+	?>
+<p>Многомерные массивы</p>
+	<?
+	$user[0] = [
+		"login" => "john",
+		"pass" => "1234",
+	];
+	$user[1] = [
+		"login" => "mike",
+		"pass" => "5678",
+	];
+	echo $user[1]['login'];
 	?>
 </body>
 
