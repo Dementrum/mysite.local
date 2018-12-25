@@ -394,6 +394,29 @@ while($i <= 10) {
 		$u++;
 	}
 ?>
+<?
+	$arr = [
+		'name' => 'John',
+		'age' => 25,
+		'login'=>'root'
+	];
+	foreach($arr as $key=>$val){
+		echo "<pre>$key : $val\n</pre>";
+	}
+?>
+<?
+	$nums = [1, 2, 3, 4, 5];
+	print_r($nums);
+	foreach($nums as &$v)
+		$v *= 10;
+	print_r($nums);
+?>
+<?
+function say(){
+	echo "<h1>Hello, world</h1>";
+}	
+say();
+?>
 </body>
 
 </html>
