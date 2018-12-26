@@ -22,6 +22,15 @@
 	endif;
 	//Создание константы
 	define('COPYRIGHT', 'Супер Мега Веб-мастер');
+		//Инициализация массива Меню
+	$leftMenu = [
+								['link'=>'Домой','href'=>'index.php'],
+								['link'=>'О нас','href'=>'about.php'],
+								['link'=>'Контакты','href'=>'contact.php'],
+								['link'=>'Таблица умножения','href'=>'table.php'],
+								['link'=>'Калькулятор','href'=>'calc.php']
+						];
+
 ?>
 
 <!DOCTYPE html>
@@ -72,22 +81,18 @@
 		<!-- Навигация -->
 		<h2>Навигация по сайту</h2>
 		<!-- Меню -->
-		<?php 
-		$leftMenu = [
-                        ['link'=>'Домой','href'=>'index.php'],
-                        ['link'=>'О нас','href'=>'about.php'],
-                        ['link'=>'Контакты','href'=>'contact.php'],
-                        ['link'=>'Таблица умножения','href'=>'table.php'],
-                        ['link'=>'Калькулятор','href'=>'calc.php']
-                    ];
-		?>
-		<ul>
-			<li><a href='<?= $leftMenu[0]['href']?>'><?= $leftMenu[0]['link']?></a></li>
-			<li><a href='<?= $leftMenu[1]['href']?>'><?= $leftMenu[1]['link']?></a></li>
-			<li><a href='<?= $leftMenu[2]['href']?>'><?= $leftMenu[2]['link']?></a></li>
-			<li><a href='<?= $leftMenu[3]['href']?>'><?= $leftMenu[3]['link']?></a></li>
-			<li><a href='<?= $leftMenu[4]['href']?>'><?= $leftMenu[4]['link']?></a></li>
-		</ul>
+			<?php
+				echo '<ul>';
+				foreach($leftMenu as $item){
+					echo'<li>';
+//					echo"<a href='".$item['href']."'>".$item['link']."</a>";
+					echo"<a href='{$item['href']}'>{$item['link']}</a>";
+					echo'</li>';
+					// echo"<li><a href='{$item['href']}'>{$item['link']}</a></li>"; В одну строку
+				}
+				echo '</ul>';
+			?>
+	
 		<!-- Меню -->
 		<!-- Навигация -->
 	</div>

@@ -1,6 +1,8 @@
 <?
 $cols = 10;
 $rows = 10;
+$color = "#ccb";
+$num = 1;
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,7 +22,7 @@ $rows = 10;
 		<!-- Верхняя часть страницы -->
 	</div>
 
-	<div id="content">
+	<<<<<<< HEAD <div id="content">
 		<!-- Заголовок -->
 		<h1>Таблица умножения</h1>
 		<!-- Заголовок -->
@@ -48,7 +50,7 @@ $rows = 10;
 				echo"<tr>";
 				for($td=1; $td<=$cols; $td++){
 					if($tr == 1 or $td == 1)
-						echo"<th style='background:#ccb;'>".$tr*$td.'</th>';
+						echo"<th style='background:$color'>".$tr*$td.'</th>';
 					else
 						echo"<td>".$tr*$td.'</td>';
 				}
@@ -58,29 +60,29 @@ $rows = 10;
 		?>
 		<!-- Таблица -->
 		<!-- Область основного контента -->
-	</div>
-	<div id="nav">
-		<h2>Навигация по сайту</h2>
-		<!-- Меню -->
-		<ul>
-			<li><a href='index.php'>Домой</a>
-			</li>
-			<li><a href='about.php'>О нас</a>
-			</li>
-			<li><a href='contact.php'>Контакты</a>
-			</li>
-			<li><a href='table.php'>Таблица умножения</a>
-			</li>
-			<li><a href='calc.php'>Калькулятор</a>
-			</li>
-		</ul>
-		<!-- Меню -->
-	</div>
-	<div id="footer">
-		<!-- Нижняя часть страницы -->
-		&copy; Супер Мега Веб-мастер, 2000 &ndash; 2015
-		<!-- Нижняя часть страницы -->
-	</div>
+		</div>
+		<div id="nav">
+			<h2>Навигация по сайту</h2>
+			<!-- Меню -->
+			<ul>
+				<li><a href='index.php'>Домой</a>
+				</li>
+				<li><a href='about.php'>О нас</a>
+				</li>
+				<li><a href='contact.php'>Контакты</a>
+				</li>
+				<li><a href='table.php'>Таблица умножения</a>
+				</li>
+				<li><a href='calc.php'>Калькулятор</a>
+				</li>
+			</ul>
+			<!-- Меню -->
+		</div>
+		<div id="footer">
+			<!-- Нижняя часть страницы -->
+			&copy; Супер Мега Веб-мастер, 2000 &ndash; 2015
+			<!-- Нижняя часть страницы -->
+		</div>
 </body>
 
 </html>
