@@ -412,11 +412,15 @@ while($i <= 10) {
 	print_r($nums);
 ?>
 <?
-function say(){
-	echo "<h1>Hello, world</h1>";
+function say($name, $h=3){
+	echo "<h$h>Hello, $name</h$h>";
 }	
-say();
+say("John", 1);
+$n = "Mike";
+say($n, 2);
+say("Guest")
 ?>
+
 </body>
 
 </html>

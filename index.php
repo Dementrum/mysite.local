@@ -88,6 +88,7 @@
 //					echo"<a href='".$item['href']."'>".$item['link']."</a>";
 					echo"<a href='{$item['href']}'>{$item['link']}</a>";
 					echo'</li>';
+					// echo"<li><a href='{$item['href']}'>{$item['link']}</a></li>"; В одну строку
 				}
 				echo '</ul>';
 			?>
