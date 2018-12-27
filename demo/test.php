@@ -413,7 +413,7 @@ while($i <= 10) {
 ?>
 
 <?php
-    function say($name="Nik", $h=3){
+  function say($name="Nik", $h=3){
 	echo "<h$h>Hello, $name</h$h>";
 }	
 say("John", 1);
@@ -423,7 +423,17 @@ say();
 say($n, 2);
 say("Guest")
 ?>
-
+	<p>Область видимости</p>
+<?php
+    function sayd($name){
+		echo "<h1>Hello, $name</h1>";
+		$GLOBALS['name']="Vasya";
+}	
+sayd("John");
+$name = "Mike";
+sayd($name);
+echo $name;
+?>
 </body>
 
 </html>
