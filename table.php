@@ -1,8 +1,9 @@
 <?php
 $cnt = 0;
 function drawTable($cols, $rows, $num, $color){
-	//global $cnt
-	$GLOBALS['cnt']++;
+	global $cnt;
+	$cnt++;
+		echo "Таблица рисуется $cnt раз";
     echo "<table border =$num>";
     for($tr=1; $tr<= $rows; $tr++) {
         echo"<tr>";
@@ -60,9 +61,9 @@ function drawTable($cols, $rows, $num, $color){
     <!-- Таблица -->
     <?php
     drawTable(10, 10, 1, '#ccb');
-//    drawTable(10, 10, 1, '#ccb');
-//    drawTable(10, 10, 1, '#ccb');
-		echo"<p>Таблица отрисована $cnt раз(а)</p>"
+    drawTable(10, 10, 1, '#ccb');
+    drawTable(10, 10, 1, '#ccb');
+//		echo"<p>Таблица отрисована $cnt раз(а)</p>"
     ?>
     <!-- Таблица -->
 	

@@ -434,6 +434,17 @@ $name = "Mike";
 sayd($name);
 echo $name;
 ?>
+<?php
+	function foo(){
+	$GLOBALS['cnt']++;
+	static $x = 0;
+	echo $x++;
+}	
+foo();
+foo();
+foo();
+echo "<p> выведено $cnt раз(а)</p>";
+?>
 </body>
 
 </html>
