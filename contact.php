@@ -1,12 +1,3 @@
-<?
-	ini_get('post_max_size');
-// 50M
-// 1G
-// 1234K
-// 12347686
-?>
-
-
 <!DOCTYPE html>
 <html>
 
