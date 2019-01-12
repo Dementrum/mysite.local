@@ -6,12 +6,12 @@ function drawTable($cols, $rows, $num, $color){
 		echo "Таблица рисуется $cnt раз";
     echo "<table border =$num>";
     for($tr=1; $tr<= $rows; $tr++) {
-        echo"<tr>";
+        echo"<tr>"; 
         for($td=1; $td<=$cols; $td++){
             if($tr == 1 or $td == 1)
                 echo"<th style='background:$color'>".$tr*$td.'</th>';
             else
-                echo"<td>".$tr*$td.'</td>';
+                echo"<td>". $tr*$td  .'</td>';
         }
         echo"</tr>";
     }
@@ -19,6 +19,7 @@ function drawTable($cols, $rows, $num, $color){
 }
 
 ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -66,7 +67,6 @@ function drawTable($cols, $rows, $num, $color){
 //		echo"<p>Таблица отрисована $cnt раз(а)</p>"
     ?>
     <!-- Таблица -->
-	
     <!-- Область основного контента -->
 </div>
 <div id="nav">
