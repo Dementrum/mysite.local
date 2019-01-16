@@ -435,8 +435,9 @@ sayd($name);
 echo $name;
 ?>
 <?php
+	$cnt=0;
 	function foo(){
-	$GLOBALS['cnt']++;
+	$cnt++;
 	static $x = 0;
 	echo $x++;
 }	
@@ -444,6 +445,22 @@ foo();
 foo();
 foo();
 echo "<p> выведено $cnt раз(а)</p>";
+?>
+<?php
+	function sum($n1, $n2){
+		return $n1 + $n2;
+	}
+	$result = sum(2, 3);
+	echo $result;
+	echo "<br>"
+?>
+<?php
+	function nums(){
+		return [1, 2, 'John'];
+	}
+//	list($one, $two, $three) = nums();
+	$three = nums()[2];
+	echo $three;
 ?>
 </body>
 

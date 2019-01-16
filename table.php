@@ -1,7 +1,7 @@
 <?php
-$cnt = 0;
+//$cnt = 0;
 function drawTable($cols, $rows, $num, $color){
-	global $cnt;
+	static $cnt = 0;
 	$cnt++;
 		echo "Таблица рисуется $cnt раз";
     echo "<table border =$num>";

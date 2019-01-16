@@ -22,7 +22,8 @@
 	endif;
 	//Создание константы
 	define('COPYRIGHT', 'Супер Мега Веб-мастер');
-		//Инициализация массива Меню
+//Меню
+//Инициализация массива Меню
 	$leftMenu = [
 								['link'=>'Домой','href'=>'index.php'],
 								['link'=>'О нас','href'=>'about.php'],
@@ -30,7 +31,20 @@
 								['link'=>'Таблица умножения','href'=>'table.php'],
 								['link'=>'Калькулятор','href'=>'calc.php']
 						];
-
+	function drawMenu($menu, $vertical = true){
+		$style = "";
+		if(!$vertical)
+			$style = "class='menu-inline'";
+		echo "<ul $style>";
+			foreach($menu as $item){
+				echo"<li>";
+				//echo"<a href='".$item['href']."'>".$item['link']."</a>";
+				echo"<a href='{$item['href']}'>{$item['link']}</a>";
+				echo'</li>';
+				// echo"<li><a href='{$item['href']}'>{$item['link']}</a></li>"; В одну строку
+			}
+		echo '</ul>';
+	}
 ?>
 
 <!DOCTYPE html>
@@ -80,23 +94,19 @@
 	<div id="nav">
 		<!-- Навигация -->
 		<h2>Навигация по сайту</h2>
+		<?php
+			drawMenu($leftMenu);
+		?>
 		<!-- Меню -->
-			<?php
-				echo '<ul>';
-				foreach($leftMenu as $item){
-					echo'<li>';
-//					echo"<a href='".$item['href']."'>".$item['link']."</a>";
-					echo"<a href='{$item['href']}'>{$item['link']}</a>";
-					echo'</li>';
-					// echo"<li><a href='{$item['href']}'>{$item['link']}</a></li>"; В одну строку
-				}
-				echo '</ul>';
-			?>
+
+		<!-- Меню -->
 	
-		<!-- Меню -->
 		<!-- Навигация -->
 	</div>
 	<div id="footer">
+		<?php
+			drawMenu($leftMenu, false);
+		?>
 		<!-- Нижняя часть страницы -->
 		&copy;
 		<?= COPYRIGHT;?> &ndash;
