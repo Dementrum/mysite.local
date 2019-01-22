@@ -461,7 +461,87 @@ echo "<p> выведено $cnt раз(а)</p>";
 //	list($one, $two, $three) = nums();
 	$three = nums()[2];
 	echo $three;
+	echo "<br>";
 ?>
+<?php
+	function num($x, $y, &$a, &$b, &$c, &$d){
+		$a = $x * $y;
+		$b = $x / $y;
+		$c = $x + $y;
+		$d = $x - $y;
+		return $x + $y;
+	}
+	$sum = num(3, 3, $mult, $div, $sub, $min);
+	echo $mult, " ",$div," ",$sub," ",$min;
+	echo "<br>"
+?> 
+<?php
+	/*
+		Array => кол-во элементов
+		NULL => 0
+		... => 1
+	*/
+	function my_count($var){
+		if(is_null($var)) return 0;
+		if(is_array($var)) return 1;
+		$cnt = 0;
+		foreach($var as $v){
+			if(is_array($v) and $mode)
+				$cnt += my_count($v, 1);
+			$cnt++;
+		}
+		return $cnt;
+	}
+?> 
+<?php
+function fot(){
+	echo func_num_args();
+	print_r(func_get_args());
+	echo func_get_arg(5);
+}
+fot (1, 2, 3, 4, 5, 6);
+echo "<br>"
+?> 
+<?php
+function fo(array $param){
+}
+fo ([1]);
+echo "<br>"
+?> 
+<?php
+	function bar ($o){}
+	function foof ($param, $x) {
+		$param($x);
+	}
+//print_r( get_defined_functions());
+?>
+<?php
+	//Псевдоконстанты
+echo __LINE__;
+echo "<br>";
+echo __FILE__;
+echo "<br>";
+echo __DIR__;
+echo "<br>";
+function foor(){
+	echo __FUNCTION__;
+}
+foor();
+echo "<br>";
+//print_r(get_defined_constants());
+?>	
+<h1>BEFORE</h1>
+<?php
+//	error_reporting(0);
+	
+//	require "test.inc.php";
+	$x = 10;
+	echo "A $color $fruit";
+	include"test.inc.php";
+	echo "A $color $fruit";
+?>
+<h1>AFTER</h1>
+
 </body>
 
 </html>
