@@ -1,5 +1,10 @@
-	<!-- Нижняя часть страницы -->
+
 	&copy;
 	<?= COPYRIGHT;?> &ndash;
 	<?= $year;?>
-	<!-- Нижняя часть страницы -->
+	<?php
+	drawMenu($leftMenu, false);
+	?>
+	<p>
+		Powered by <?=$_SERVER["SERVER_SOFTWARE"]?>/PHP<?=PHP_VERSION?> on <?=PHP_OS?>
+	</p>

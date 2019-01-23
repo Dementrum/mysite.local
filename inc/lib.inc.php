@@ -1,16 +1,17 @@
 <?php
-	function deawMenu($menu,  $vertical=true){
+	function drawMenu($menu, $vertical = true){
 		$style = "";
 		if(!$vertical)
-			$style = "dislay-inline: inline; margin-right: 15px;";
-		echo "<ul$style>";
-		foreach($menu as $item){
-			echo "<li>";
-			echo"<a href='{$item['href']}'{$item['link']}></a>";
-			echo "</li>";
-		}
-		echo "</ul>";
-			
+			$style = "class='menu-inline'";
+		echo "<ul $style>";
+			foreach($menu as $item){
+				echo"<li>";
+				//echo"<a href='".$item['href']."'>".$item['link']."</a>";
+				echo"<a href='{$item['href']}'>{$item['link']}</a>";
+				echo'</li>';
+				// echo"<li><a href='{$item['href']}'>{$item['link']}</a></li>"; В одну строку
+			}
+		echo '</ul>';
 	}
 ?>    
     <!-- Таблица -->
@@ -32,8 +33,7 @@
 						echo"</tr>";
 				}
 				echo"</table>";
-		}
-//    drawTable(10, 10, 1, '#ccb');
+		};
 
     ?>
     <!-- Таблица -->

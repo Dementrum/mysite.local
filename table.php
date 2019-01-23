@@ -1,3 +1,7 @@
+<?php
+	require_once"inc/lib.inc.php";
+	require_once"inc/data.inc.php";
+?>
 <!DOCTYPE html>
 <html>
 
@@ -37,29 +41,24 @@
         <br />
         <input type='submit' value='Создать' />
     </form>
-
+   <?php
+		drawTable(10, 10, 1, '#ccb');
+	?>
     <!-- Область основного контента -->
 </div>
 <div id="nav">
     <h2>Навигация по сайту</h2>
     <!-- Меню -->
-    <ul>
-        <li><a href='index.php'>Домой</a>
-        </li>
-        <li><a href='about.php'>О нас</a>
-        </li>
-        <li><a href='contact.php'>Контакты</a>
-        </li>
-        <li><a href='table.php'>Таблица умножения</a>
-        </li>
-        <li><a href='calc.php'>Калькулятор</a>
-        </li>
-    </ul>
+   	<?php
+			require_once"inc/menu.inc.php";	
+		?>
     <!-- Меню -->
 </div>
 <div id="footer">
     <!-- Нижняя часть страницы -->
-    &copy; Супер Мега Веб-мастер, 2000 &ndash; 2015
+    	<?php
+			require_once"inc/bottom.inc.php";	
+		?>
     <!-- Нижняя часть страницы -->
 </div>
 </body>
