@@ -1,5 +1,19 @@
 <?php
+	function myError($num, $msg, $file, $line){
+		$dt = date("d-m-Y H:i:s");
+		$str = "[$dt] - $msg in $file:$line\n";
+		switch ($num) {
+			case E_USER_ERROR:
+			case E_USER_WARNING:
+			case E_USER_NOTICE:
+				echo $msg;
+				
+		}
+		error_log($str, 3, "error.log");
+	}
 	function drawMenu($menu, $vertical = true){
+		if(!is_array($menu))
+			return false;
 		$style = "";
 		if(!$vertical)
 			$style = "class='menu-inline'";
@@ -12,6 +26,7 @@
 				// echo"<li><a href='{$item['href']}'>{$item['link']}</a></li>"; В одну строку
 			}
 		echo '</ul>';
+		return true;
 	}
 ?>    
     <!-- Таблица -->
