@@ -541,7 +541,6 @@ echo "<br>";
 	echo "A $color $fruit";
 ?>
 <h1>AFTER</h1>
-
 </body>
 
 </html>

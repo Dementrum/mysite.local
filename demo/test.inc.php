@@ -60,8 +60,13 @@
 //foo();
 //print_r(get_defined_constants(true));
 //echo $_SERVER['SERVER_NAME']
-$color = 'green';
-$fruit = 'apple';
-include_once "test.php";
-echo $x;
+//$color = 'green';
+//$fruit = 'apple';
+//include_once "test.php";
+//echo $x;
 ?>
+<a href="test.inc.php?x=100">LINK</a>
+<?php
+echo $_GET["x"];
+?>
+
