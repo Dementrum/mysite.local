@@ -3,7 +3,8 @@
 	require_once"inc/lib.inc.php";
 	set_error_handler("myError");
 	require_once"inc/data.inc.php";
-//Инициализация заголовков страницы
+	require_once"inc/cookie.inc.php";
+////Инициализация заголовков страницы
 $title = 'Сайт нашей школы';
 $header = "$welcome, Гость!";
 $id = strtolower(strip_tags(trim($_GET['id'])));
@@ -52,8 +53,17 @@ switch($id){
 		<blockquote>
 			<?php
             //echo strftime('Сегодня %d-%m-%Y');
-            echo "Сегодня $day $mon $year";
-        ?>
+        echo "Сегодня $day $mon $year";
+			?>
+		</blockquote>
+		<blockquote>
+			<?php
+			if($visitCounter == 1){
+				echo "Cпасибо, что зашли к нам на огонёк";
+			} else {
+				echo "Вы зашли к нам $visitCounter раз<br>Последнее посещение:$lastVisit";
+			}
+       ?>
 		</blockquote>
 		<!-- Область основного контента -->
 		<?php
@@ -73,6 +83,7 @@ switch($id){
 				default:
 					include 'inc/index.inc.php';
 			}	
+		
 		?>
 		<!-- Область основного контента -->
 	</div>

@@ -65,8 +65,15 @@
 //include_once "test.php";
 //echo $x;
 ?>
-<a href="test.inc.php?x=100">LINK</a>
+<!--<a href="test.inc.php?x=100">LINK</a>-->
 <?php
-echo $_GET["x"];
-?>
+//echo $_GET["x"];
+$user = [
+'name' => 'John',
+'login' => 'root',
+'password' => '1234'
+];
 
+$str = serialize($user);
+echo base64_encode($str);
+?>

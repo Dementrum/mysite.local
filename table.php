@@ -9,13 +9,13 @@
 	}
 	$cols = ($cols) ? $cols : 10;
 	$rows = ($rows) ? $rows : 10;
-	$color = ($color) ? $color : 'yellow';
+	$color = ($color) ? $color : '#ccc';
 ?>
 <!DOCTYPE html>
 <html>
 <body>
     <!-- Область основного контента -->
-    <form action=''>
+    <form action='' method="POST">
         <label>Количество колонок: </label>
         <br />
         <input name='cols' type='text' value="" />
@@ -33,6 +33,7 @@
     </form>
    <?php
 		drawTable($cols, $rows, 1, $color);
+		drawTable($cols = 5, $rows = 5, 3, $color='#efcfce');
 	?>
     <!-- Область основного контента -->
 

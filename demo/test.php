@@ -52,7 +52,7 @@ header("Content-Type: text/plain; charset=utf-8");
 	<p>Константа</p>
 	<?php
 			const TWO_HUNDRED = 200;
-			const TWO_HUNDRED_TEN = TWO_HUNDRED + 10;
+//			const TWO_HUNDRED_TEN = TWO_HUNDRED + 10;
 			echo ONE_HUNDRED_TEN;
 	?>
 
@@ -433,7 +433,9 @@ sayd("John");
 $name = "Mike";
 sayd($name);
 echo $name;
+echo "<br/>"
 ?>
+<p>Статические переменные</p>
 <?php
 	$cnt=0;
 	function foo(){
@@ -542,5 +544,11 @@ echo "<br>";
 ?>
 <h1>AFTER</h1>
 </body>
-
+<?php
+	$a = 50;
+	echo "<div class= \"$a\">1</div>";
+	$c = " 50 приветов и 20 пока";
+	$d = (int)$c;
+	echo $d .'<br>'
+?>
 </html>

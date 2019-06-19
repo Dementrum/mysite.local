@@ -7,7 +7,7 @@
 <html>
 <body>
 	<!-- Область основного контента -->
-	<form action=''>
+	<form action='' method ="POST">
 		<label>Число 1:</label>
 		<br />
 		<input name='num1' type='text' />
@@ -24,6 +24,10 @@
 		<input type='submit' value='Считать'>
 	</form>
     <!-- Область основного контента -->
+  <?php
+	if($_SERVER['REQUEST_METHOD'] == 'POST')
+		echo "данные переданы методом POST"
+	?>
 </body>
 
 </html>
