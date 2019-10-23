@@ -1,6 +1,7 @@
 <?php
 error_reporting(0);
 require_once "inc/lib.inc.php";
+set_error_handler("myErr");
 require_once "inc/data.inc.php";
 require_once "inc/locali.inc.php";
 //Создание константы

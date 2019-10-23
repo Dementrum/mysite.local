@@ -1,4 +1,15 @@
 <?php
+function myErr($no, $msg, $file, $line){
+    $dt = date("d-m-Y H:i:s");
+    $str = "[$dt] -$msg in $file on $line\n";
+    switch ($no) {
+        case E_USER_ERROR:
+        case E_USER_WARNING:
+        case E_USER_NOTICE:
+            echo $msg;
+    }
+    error_log($str, 3, "error.log");
+}
 function drawTable($cols, $rows, $num, $color){
 	static $cnt = 0;
 	$cnt++;
