@@ -6,6 +6,6 @@ drawMenu($leftMenu, false);
 <?= COPYRIGHT;?> &ndash;
 <?= $year;?>
 <p>
-	Powered by <?=$_SERVER["SERVER_SOFTWARE"]?>/PHP <?= PHP_VERSION ?> on <?=PHP_OS_FAMILY?>
+	Powered by <?=$_SERVER["SERVER_SOFTWARE"]?>/PHP <?= PHP_VERSION ?> on <?=PHP_OS?>
 </p>
 <!-- Нижняя часть страницы -->
