@@ -5,7 +5,11 @@ $day = strftime('%d');
 $mon = strftime('%B');
 $year = strftime('%Y');
 if(PHP_OS =="WINNT")
+<<<<<<< HEAD
 	$mon = iconv('windows-1251', 'utf-8', $mon);
+=======
+    $mon = iconv('windows-1251', 'utf-8', $mon);
+>>>>>>> b8a925d93cc961004d78e79c0e3176816ff85b4c
 
     // Приветствие
 $hour = (int)strftime('%H');//Получаем текущий час в виде строки от 00 до 23 и приводим к целому числу от 0 до 23
