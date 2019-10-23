@@ -4,8 +4,8 @@ setlocale(LC_TIME, "ru_RU.UTF-8", "russian");
 $day = strftime('%d');
 $mon = strftime('%B');
 $year = strftime('%Y');
-if(PHP_OS_FAMILY=="Windows")
-    $mon = iconv('windows-1251', 'utf-8', $mon);
+if(PHP_OS =="WINNT")
+	$mon = iconv('windows-1251', 'utf-8', $mon);
 
     // Приветствие
 $hour = (int)strftime('%H');//Получаем текущий час в виде строки от 00 до 23 и приводим к целому числу от 0 до 23
