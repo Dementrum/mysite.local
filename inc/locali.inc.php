@@ -4,7 +4,7 @@ setlocale(LC_TIME, "ru_RU.UTF-8", "russian");
 $day = strftime('%d');
 $mon = strftime('%B');
 $year = strftime('%Y');
-if(PHP_OS_FAMILY=="Windows")
+if(PHP_OS =="WINNT")
     $mon = iconv('windows-1251', 'utf-8', $mon);
 
     // Приветствие
