@@ -1,7 +1,7 @@
 <?php
 function myErr($no, $msg, $file, $line){
     $dt = date("d-m-Y H:i:s");
-    $str = "[$dt] -$msg in $file on $line\n";
+    $str = "[$dt] -$msg in $file : $line\n";
     switch ($no) {
         case E_USER_ERROR:
         case E_USER_WARNING:
