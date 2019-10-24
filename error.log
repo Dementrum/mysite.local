@@ -1,9 +1,3 @@
-[23-10-2019 21:02:45] -Undefined variable: leftMenu in E:\OSPanel\domains\mysite.local\inc\menu.inc.php on 3
-[23-10-2019 21:02:45] -Sorry .... in E:\OSPanel\domains\mysite.local\inc\menu.inc.php on 4
-[23-10-2019 21:02:45] -Undefined variable: leftMenu in E:\OSPanel\domains\mysite.local\inc\footer.inc.php on 2
-[24-10-2019 16:51:34] -Undefined variable: leftMenu in E:\OSPanel\domains\mysite.local\inc\menu.inc.php on 3
-[24-10-2019 16:51:34] -Sorry .... in E:\OSPanel\domains\mysite.local\inc\menu.inc.php on 4
-[24-10-2019 16:51:34] -Undefined variable: leftMenu in E:\OSPanel\domains\mysite.local\inc\footer.inc.php on 2
-[24-10-2019 16:51:36] -Undefined variable: leftMenu in E:\OSPanel\domains\mysite.local\inc\menu.inc.php on 3
-[24-10-2019 16:51:36] -Sorry .... in E:\OSPanel\domains\mysite.local\inc\menu.inc.php on 4
-[24-10-2019 16:51:36] -Undefined variable: leftMenu in E:\OSPanel\domains\mysite.local\inc\footer.inc.php on 2
+[24-10-2019 05:48:36] -Undefined variable: leftMenu in W:\domains\mysite.local\inc\menu.inc.php : 3
+[24-10-2019 05:48:36] -Проблема с отрисовкой меню in W:\domains\mysite.local\inc\menu.inc.php : 4
+[24-10-2019 05:48:36] -Undefined variable: leftMenu in W:\domains\mysite.local\inc\footer.inc.php : 2
