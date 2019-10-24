@@ -28,8 +28,8 @@ function drawTable($cols, $rows, $num, $color){
     echo"</table>";
 }
 function drawMenu($menu, $vertical = true){
-		if(!is_array($menu))
-			return false;
+    if(!is_array($menu))
+        return false;
     $style = "";
     if(!$vertical)
         $style = "class='menu-inline'";
