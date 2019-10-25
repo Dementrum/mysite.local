@@ -1,12 +1,11 @@
 <?php
-error_reporting(0);
+error_reporting(1);
 require_once "inc/lib.inc.php";
 set_error_handler("myErr");
 require_once "inc/data.inc.php";
 require_once "inc/locali.inc.php";
 //Создание константы
 	define('COPYRIGHT', 'Супер Мега Веб-мастер');
-
 $title = 'Сайт нашей школы';
 $header = "$welcome ,Гость";
 $id = strtolower(strip_tags(trim($_GET['id'])));
@@ -64,21 +63,21 @@ switch ($id) {
 		<!-- Область основного контента -->
 		<?php
 			switch ($id){
-                case 'about':
-                    include 'about.php';
-                    break;
-                case 'contact':
-                    include 'contact.php';
-                    break;
-                case 'table':
-                    include 'table.php';
-                    break;
-                case 'calc':
-                    include 'calc.php';
-                    break;
-                default:
-                    include  'inc/index.inc.php';
-            }
+				case 'about':
+						include 'about.php';
+						break;
+				case 'contact':
+						include 'contact.php';
+						break;
+				case 'table':
+						include 'table.php';
+						break;
+				case 'calc':
+						include 'calc.php';
+						break;
+				default:
+						include  'inc/index.inc.php';
+		}
 		?>
 		<!-- Область основного контента -->
 	</div>
