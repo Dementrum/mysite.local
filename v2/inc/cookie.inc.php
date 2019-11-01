@@ -11,3 +11,4 @@ if(date('d-m-Y', $_COOKIE['lastVisit']) != date('d-m-Y')) {
     setcookie("visitCounter", $visitCounter, 0x7FFFFFFF);
     setcookie("lastVisit", time(), 0x7FFFFFFF);
 }
+
