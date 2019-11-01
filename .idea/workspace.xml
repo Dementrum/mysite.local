@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96ba7875-1cb1-4203-82c8-7f08b2f3642b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/inc/cookie.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/v2/inc/cookie.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/v2/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v2/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/v2/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v2/demo/_headers/location/form-post.php" beforeDir="false" afterPath="$PROJECT_DIR$/v2/demo/_headers/location/form-post.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,23 +32,54 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/v2/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
+            <state relative-caret-position="638">
               <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cookie.inc.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cookie.inc.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/v2/inc/cookie.inc.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="go.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v2/demo/_headers/location/go.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="form-post.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v2/demo/_headers/location/form-post.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="499">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+              <folding>
+                <marker date="1572530805030" expanded="true" signature="305:356" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="refresh.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/v2/demo/_headers/refresh/refresh.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="refresh-url.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v2/demo/_headers/refresh/refresh-url.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -73,6 +103,9 @@
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/v2/index.php" />
         <option value="$PROJECT_DIR$/v2/inc/cookie.inc.php" />
+        <option value="$PROJECT_DIR$/v2/.htaccess" />
+        <option value="$PROJECT_DIR$/v2/demo/_headers/location/form-post.php" />
+        <option value="$PROJECT_DIR$/v2/demo/_headers/refresh/refresh.php" />
       </list>
     </option>
   </component>
@@ -122,6 +155,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,13 +172,27 @@
               <item name="mysite.local" type="b2602c69:ProjectViewProjectNode" />
               <item name="mysite.local" type="462c0819:PsiDirectoryNode" />
               <item name="v2" type="462c0819:PsiDirectoryNode" />
-              <item name="inc" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mysite.local" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mysite.local" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="_headers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mysite.local" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mysite.local" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="_headers" type="462c0819:PsiDirectoryNode" />
+              <item name="refresh" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,11 +261,12 @@
       <workItem from="1572174423092" duration="10992000" />
       <workItem from="1572269783991" duration="181000" />
       <workItem from="1572269967030" duration="6911000" />
+      <workItem from="1572529077425" duration="3759000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42103000" />
+    <option name="totallyTimeSpent" value="45862000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -231,7 +280,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="967" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06820623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13480128" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5028653" side_tool="true" weight="0.39897698" />
@@ -240,7 +289,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.061097257" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.061097257" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49713466" weight="0.40286833" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -261,33 +310,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/calc.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1218">
-          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calc.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -514,12 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-          <folding>
-            <element signature="n#myErr#0;n#!!top" />
-            <element signature="n#drawTable#0;n#!!top" />
-            <element signature="n#style#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#drawMenu#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -540,13 +556,6 @@
     <entry file="file://$PROJECT_DIR$/error.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -556,7 +565,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/v2/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
+        <state relative-caret-position="638">
           <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
         </state>
       </provider>
@@ -565,6 +574,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/demo/_headers/location/go.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/demo/_headers/location/form-post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <marker date="1572530805030" expanded="true" signature="305:356" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/demo/_headers/refresh/refresh-url.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/demo/_headers/refresh/refresh.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
         </state>
       </provider>
     </entry>

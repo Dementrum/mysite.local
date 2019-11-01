@@ -12,8 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	// ... 
 	
 	// перезапрос формы методом GET
-	//header("Location: " . $_SERVER["PHP_SELF"]);
-	//exit;
+	header("Location: " . $_SERVER["PHP_SELF"]);
+	exit;
 }
 else {
 	// Чтение куки
@@ -40,7 +40,6 @@ else {
 	<input type="submit" value="Передать">
 </form>
 <?
-if ($name and $age) {	
 	if ($name and $age) {
 		echo "<h1>Привет, $name</h1>";
 		echo "<h3>Тебе $age лет</h3>";
@@ -48,7 +47,6 @@ if ($name and $age) {
 	else {
 		print "<h3>Заполните все поля!</h3>";
 	}
-}
 ?>
 </body>
 </html>
