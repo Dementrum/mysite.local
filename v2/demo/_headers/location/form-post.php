@@ -12,8 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	// ... 
 	
 	// перезапрос формы методом GET
-	//header("Location: " . $_SERVER["PHP_SELF"]);
-	//exit;
+	header("Location: " . $_SERVER["PHP_SELF"]);
+	exit;
 }
 else {
 	// Чтение куки
@@ -21,8 +21,7 @@ else {
 	$age = $_COOKIE["userAge"] * 1;
 }
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-
+<!DOCTYPE html>	
 <html>
 <head>
 	<meta charset="utf-8" />
@@ -40,15 +39,13 @@ else {
 	<input type="submit" value="Передать">
 </form>
 <?
-if ($name and $age) {	
-	if ($name and $age) {
-		echo "<h1>Привет, $name</h1>";
-		echo "<h3>Тебе $age лет</h3>";
-	}
-	else {
+if ($name and $age) {
+	echo "<h1>Привет, $name</h1>";
+	echo "<h3>Тебе $age лет</h3>";
+	} else {
 		print "<h3>Заполните все поля!</h3>";
 	}
-}
+
 ?>
 </body>
 </html>

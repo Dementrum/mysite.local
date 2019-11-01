@@ -1,4 +1,4 @@
-<?
+<?php
 	include 'inc/headers.inc.php';
     include 'inc/cookie.inc.php';
 ?>
