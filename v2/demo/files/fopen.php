@@ -4,7 +4,6 @@
 </HEAD>
 <BODY>
 <?
-	
 ?>
 </BODY>
 </HTML>
