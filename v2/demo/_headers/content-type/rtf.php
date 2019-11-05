@@ -1,5 +1,5 @@
 <?
-header("Content-type: application/rtf");
+header("Content-type: application/rtf; charset=utf-8");
 header("Content-disposition: attachment; filename=\"mydoc.rtf\"");
 
 $file_content = <<<EOF
@@ -24,8 +24,8 @@ EOF;
 
 
 $user_name = strip_tags($_COOKIE["userName"]);
-if (!$user_name) $user_name = "ÐÐµÐ·Ð½Ð°ÐºÐ¾Ð¼ÐµÑ†";
-$user_name .= " Ð¢Ñ‹ Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÐµÑˆÑŒ Ñ IP " . $_SERVER["REMOTE_ADDR"];
+if (!$user_name) $user_name = "Íåçíàêîìåö";
+$user_name .= " Òû ðàáîòàåøü ñ IP " . $_SERVER["REMOTE_ADDR"];
 $file_content = str_replace("USER", $user_name, $file_content);
 
 echo $file_content;
