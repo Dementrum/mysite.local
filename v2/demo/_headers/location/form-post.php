@@ -39,6 +39,7 @@ else {
 	<input type="submit" value="Передать">
 </form>
 <?
+
 if ($name and $age) {
 	echo "<h1>Привет, $name</h1>";
 	echo "<h3>Тебе $age лет</h3>";
