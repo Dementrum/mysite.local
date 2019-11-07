@@ -1,4 +1,4 @@
-﻿<? session_start() ?>
+<? session_start() ?>
     <!DOCTYPE HTML>
     <html>
     <head>
@@ -6,7 +6,7 @@
         <title>Закрыть сессию</title>
     </head>
     <body>
-    <h1>Cессия закрыта/h1>
+    <h1>Cессия закрыта</h1>
     </body>
     </html>
 <? session_destroy() ?>

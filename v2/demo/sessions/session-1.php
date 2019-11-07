@@ -3,7 +3,7 @@ session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$name = strip_tags($_POST["name"]);
-	$age = $_POST["age"] * 1;
+	$age = (int)$_POST["age"] * 1;
 	
 	$_SESSION["name"] = $name;
 	$_SESSION["age"] = $age;
@@ -34,7 +34,6 @@ else {
 	<input type="submit" value="Передать">
 </form>
 <?
-if ($name and $age) {	
 	if ($name and $age) {
 		echo "<h1>Привет, $name</h1>";
 		echo "<h3>Тебе $age лет</h3>";
@@ -42,7 +41,6 @@ if ($name and $age) {
 	else {
 		print "<h3>Заполните все поля!</h3>";
 	}
-}
 ?>
 
 
