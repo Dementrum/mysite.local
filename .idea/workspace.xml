@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96ba7875-1cb1-4203-82c8-7f08b2f3642b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml___jb_tmp___" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/demo/sessions/session_destroy.php" beforeDir="false" afterPath="$PROJECT_DIR$/v2/demo/sessions/session_destroy.php" afterDir="false" />
-    </list>
+    <list default="true" id="96ba7875-1cb1-4203-82c8-7f08b2f3642b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,8 +42,8 @@
       <file leaf-file-name="session_destroy.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/v2/demo/sessions/session_destroy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="242">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -231,12 +226,12 @@
       <workItem from="1572529077425" duration="3759000" />
       <workItem from="1572683186169" duration="5918000" />
       <workItem from="1573052594291" duration="652000" />
-      <workItem from="1573122809518" duration="1536000" />
+      <workItem from="1573122809518" duration="1950000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53968000" />
+    <option name="totallyTimeSpent" value="54382000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -573,8 +568,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/v2/demo/sessions/session_destroy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        <state relative-caret-position="242">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
