@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['test']) and !isset($_POST)) {
+	# code...
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

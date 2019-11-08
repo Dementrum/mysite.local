@@ -3,10 +3,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Закрыть сессию</title>
+	<title>Р—Р°РєСЂС‹С‚СЊ СЃРµСЃСЃРёСЋ</title>
 </head>
 <body>
-<h1>Сессия закрыта</h1>
+<h1>РЎРµСЃСЃРёСЏ Р·Р°РєСЂС‹С‚Р°</h1>
 </body>
 </html>
 <? session_destroy() ?>
