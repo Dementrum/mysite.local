@@ -18,8 +18,8 @@ $str = $_GET["str"];
 </form>
 <?
 // Хэш для строки "password"
-// $hash = password_hash("password", PASSWORD_BCRYPT);
-$hash = '$2y$10$qb.toUZtlEeElHf2XprIyexf.5JnMluJYtssNjcuQk0tIu4if0f8K';
+/* echo $hash = password_hash("password", PASSWORD_BCRYPT); */
+$hash = '$2y$10$y1Wt./c4/eh6VXViOpXU4eQlEoXmCEstVGa9w2QTQi3T.QvwCD56C'; 
 
  if ($str) {
 	if( password_verify($str, $hash) )

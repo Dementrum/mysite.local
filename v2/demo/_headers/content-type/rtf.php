@@ -1,5 +1,5 @@
 <?
-header("Content-type: application/rtf; charset=windows-1251");
+header("Content-type: application/rtf; charset=utf-8");
 header("Content-disposition: attachment; filename=\"mydoc.rtf\"");
 
 $file_content = <<<EOF

@@ -25,8 +25,7 @@ else {
 <h1>Демонстрация сессии</h1>
 <a href="session-2.php">Демо сессии</a><br>
 <a href="session_destroy.php">Закрыть сессию</a><br><br>
-<form action="<?=$_SERVER["PHP_SELF"]?>" 
-		method="post">
+<form action="<?=$_SERVER["PHP_SELF"]?>" method="post">
 	Ваше имя:
 	<input type="text" name="name" value="<?=$name?>"><br>
 	Ваш возраст:

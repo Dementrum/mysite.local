@@ -20,7 +20,12 @@ $str = $_GET["str"];
 if ($str) {
 	echo "<h2>MD5: ", md5($str) ,"</h2>";
 	echo "<h2>SHA1: ", sha1($str) ,"</h2>";
+	$srt2 = sha1($str);
+	echo "<h2>SHA1 + MD5: ", md5($str2) ,"</h2>";
 }
+?>
+<?php
+echo md5("password" . "uutdffnbmjhgcfgdf");
 ?>
 </body>
 </html>

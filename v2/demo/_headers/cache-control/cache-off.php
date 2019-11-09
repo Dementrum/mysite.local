@@ -1,6 +1,6 @@
 <?
-header("Cache-control: no-cache, max-age=0");
-//header("Cache-control: no-store");
+header("Cache-control: no-cache, max-age=0");// Запрет кеширования при перезагрузке браузера
+/* header("Cache-control: no-store"); // Полный запрет кеширования */
 ?>
 <!DOCTYPE HTML>
 
