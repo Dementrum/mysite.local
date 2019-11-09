@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="96ba7875-1cb1-4203-82c8-7f08b2f3642b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/demo/sessions/session-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/v2/demo/sessions/session-1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/demo/sessions/session-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/v2/demo/sessions/session-2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/demo/sessions/session_destroy.php" beforeDir="false" afterPath="$PROJECT_DIR$/v2/demo/sessions/session_destroy.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,20 +31,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="session-1.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="session-1.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/v2/demo/sessions/session-1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="22">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="session-2.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="session-2.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/v2/demo/sessions/session-2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="550">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -107,7 +104,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="494" />
     <option name="y" value="591" />
     <option name="width" value="1459" />
@@ -234,12 +231,13 @@
       <workItem from="1572529077425" duration="3759000" />
       <workItem from="1572683186169" duration="5918000" />
       <workItem from="1573052594291" duration="652000" />
-      <workItem from="1573122809518" duration="4382000" />
+      <workItem from="1573122809518" duration="5050000" />
+      <workItem from="1573215789037" duration="39000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56814000" />
+    <option name="totallyTimeSpent" value="57521000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -252,25 +250,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="967" extended-state="6" />
-    <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1471536" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="7" weight="0.19556715" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021482" side_tool="true" weight="0.33167082" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" x="27" y="673" width="1862" height="266" id="Terminal" order="7" sideWeight="0.49785176" type="FLOATING" weight="0.33167082" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14500538" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021482" side_tool="true" weight="0.33167082" />
       <window_info anchor="right" id="Database" order="3" weight="0.3295129" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49713466" weight="0.40286833" />
+      <window_info anchor="bottom" x="27" y="673" width="1862" height="266" id="Terminal" order="7" sideWeight="0.49785176" type="FLOATING" weight="0.33167082" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49713466" weight="0.40286833" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="7" weight="0.19556715" />
       <window_info anchor="bottom" id="Inspection Results" order="8" visible="true" weight="0.32985657" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -575,17 +572,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v2/demo/sessions/session-1.php">
+    <entry file="file://$PROJECT_DIR$/v2/demo/sessions/session-2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="550">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v2/demo/sessions/session-2.php">
+    <entry file="file://$PROJECT_DIR$/v2/demo/sessions/session-1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="22">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>
