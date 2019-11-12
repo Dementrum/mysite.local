@@ -5,13 +5,13 @@ if (isset($_SESSION['test'])) {
 	$answers = parse_ini_file('answers.ini');
 	// Проходим по ответам и смотрим, есть ли среди них правильные
 	foreach ($_SESSION['test'] as $value) {
-		if (array_key_exists($value, $answers)) {
+		if (array_key_exists($value, $answers))
 			// Суммируем правильные  ответы
-			$result += (int)$answers[$value]; 
-		}
-		// Очищаем данные сессии
-		session_destroy();
+			$result += (int)$answers[$value];
+
 	}
+    // Очищаем данные сессии
+    session_destroy();
 }
 ?>
 
