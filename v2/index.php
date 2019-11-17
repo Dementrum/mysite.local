@@ -1,5 +1,7 @@
 <?php
+	// Имя файла журнала
 	define('PATH_LOG', 'path.log');
+	
 	include 'inc/headers.inc.php';
 	include 'inc/cookie.inc.php';
 	include 'inc/log.inc.php';
@@ -49,6 +51,7 @@
 				<li><a href='index.php?id=contact'>Контакты</a></li>
 				<li><a href='index.php?id=about'>О нас</a></li>
 				<li><a href='index.php?id=info'>Информация</a></li>
+				<li><a href='index.php?id=log'>Журнал посещений</a></li>
 				<li><a href='test/index.php'>Он-лайн тест</a></li>
 				<li><a href='index.php?id=log'>Журнал посещений</a></li>
 				<li><a href='index.php?id=gbook'>Гостевая книга</a></li>
