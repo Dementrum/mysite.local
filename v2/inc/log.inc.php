@@ -1,7 +1,8 @@
 <?php
-$dt = $_SERVER['REQUEST_TIME'];
-$page = $_SERVER['REQUEST_URI'];
+$dt = time();
+$page = $_GET['id'] ?? 'index';
 $ref = $_SERVER['HTTP_REFERER'];
+$ref = pathinfo($ref, PATHINFO_BASENAME);
 $path = "$dt|$page|$ref\n";
 
-file_put_contents("W:\\domains\\mysite.local\\v2\\log\\path.log", $path, FILE_APPEND) or die("Не могу открыть файл");
+file_put_contents("log/" . PATH_LOG, $path, FILE_APPEND);
